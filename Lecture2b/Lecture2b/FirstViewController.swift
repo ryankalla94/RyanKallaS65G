@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  test
+//  FirstViewController.swift
+//  Lecture2b
 //
 //  Created by Ryan Kalla on 6/22/16.
 //  Copyright © 2016 RyanKalla. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
