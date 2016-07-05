@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -25,14 +25,12 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-Tm-NTQ" userLabel="LifeGrid">
                                         <rect key="frame" x="79.5" y="55.5" width="441" height="441"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.21941720744640614" green="0.36796000735167178" blue="1" alpha="0.38087284482758621" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ddi-Tm-NTQ" secondAttribute="height" multiplier="1:1" id="ohA-a3-bcQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ddi-Tm-NTQ" firstAttribute="width" secondItem="VNj-Hk-CD2" secondAttribute="width" multiplier="0.8" priority="750" id="GHk-UL-cJN"/>
@@ -46,7 +44,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="VNj-Hk-CD2" secondAttribute="bottom" id="01o-nr-7io"/>
@@ -84,39 +81,32 @@
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3K7-zM-UJX">
                                                         <rect key="frame" x="47" y="101.5" width="506" height="31"/>
-                                                        <animations/>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frames/Second" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-Jd-kES">
                                                         <rect key="frame" x="239" y="151.5" width="121" height="20.5"/>
-                                                        <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-64-Ld2">
                                                         <rect key="frame" x="265" y="73.5" width="69" height="20.5"/>
-                                                        <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-Dc-NWS">
                                                         <rect key="frame" x="280" y="230" width="39" height="30"/>
-                                                        <animations/>
                                                         <state key="normal" title="Reset"/>
                                                     </button>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Generation" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dsj-cN-3EF">
                                                         <rect key="frame" x="253" y="23.5" width="93" height="30"/>
-                                                        <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KyC-8H-hg3">
                                                         <rect key="frame" x="47" y="180" width="506" height="31"/>
-                                                        <animations/>
                                                     </slider>
                                                 </subviews>
-                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="3K7-zM-UJX" firstAttribute="centerX" secondItem="QhC-j1-UmK" secondAttribute="centerX" priority="750" id="2bt-ku-D12"/>
@@ -160,16 +150,16 @@
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="DYs-Ix-vWA"/>
-                                                        <exclude reference="c9S-Mh-A0N"/>
-                                                        <exclude reference="zuL-WO-p6B"/>
                                                         <exclude reference="gMV-7j-eYL"/>
                                                         <exclude reference="h82-Sl-WD2"/>
-                                                        <exclude reference="Hem-d8-NTS"/>
-                                                        <exclude reference="mJu-SV-rBk"/>
                                                         <exclude reference="ZMI-Xl-VN5"/>
                                                         <exclude reference="gJG-pG-WfF"/>
                                                         <exclude reference="lSl-7L-xCx"/>
+                                                        <exclude reference="DYs-Ix-vWA"/>
+                                                        <exclude reference="c9S-Mh-A0N"/>
+                                                        <exclude reference="zuL-WO-p6B"/>
+                                                        <exclude reference="Hem-d8-NTS"/>
+                                                        <exclude reference="mJu-SV-rBk"/>
                                                         <exclude reference="cje-Mx-Yjd"/>
                                                         <exclude reference="eMw-GQ-7jL"/>
                                                         <exclude reference="B5c-Ia-9qj"/>
@@ -178,16 +168,15 @@
                                                 <variation key="heightClass=regular-widthClass=compact">
                                                     <mask key="constraints">
                                                         <include reference="h82-Sl-WD2"/>
-                                                        <include reference="Hem-d8-NTS"/>
                                                         <exclude reference="ZMI-Xl-VN5"/>
                                                         <include reference="gJG-pG-WfF"/>
+                                                        <include reference="Hem-d8-NTS"/>
                                                         <include reference="cje-Mx-Yjd"/>
                                                         <include reference="B5c-Ia-9qj"/>
                                                     </mask>
                                                 </variation>
                                             </view>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.15479587824885643" green="0.49294094137693589" blue="1" alpha="0.36007543103448275" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="QhC-j1-UmK" secondAttribute="trailing" id="05t-Oc-2vA"/>
@@ -214,7 +203,6 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ox-27-rPD" userLabel="GreenView">
                                         <rect key="frame" x="0.0" y="275" width="600" height="275.5"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.028703798559206462" green="1" blue="0.0748984358361382" alpha="0.55571120689655173" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -223,7 +211,6 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cKJ-LN-jaY" secondAttribute="bottom" id="09g-d1-eL4"/>
@@ -331,7 +318,6 @@
                                 </variation>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Kng-XF-8Yt" secondAttribute="bottom" id="8gI-z2-0mI"/>
@@ -360,7 +346,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
