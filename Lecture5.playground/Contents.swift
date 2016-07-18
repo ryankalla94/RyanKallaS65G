@@ -106,20 +106,86 @@ grid.grid
 
 
 
+//Lecture 6
+
+protocol ExampleProtocol {
+    var rows: UInt { get set }
+    var cols: UInt { get set }
+    func step() -> Array<Array<Bool>>
+}
+
+protocol ExampleDelegateProtocol {
+    func example(e: Example, didUpdateRows: UInt)
+}
+
+class Example : ExampleProtocol {
+    var rows = UInt(10) {
+        didSet {
+            if let delegate = delegate {
+                delegate.example(self, didUpdateRows: self.rows)
+            }
+        }
+    }
+    var cols = UInt(10)
+    var delegate: ExampleDelegateProtocol?
+    func step() -> Array<Array<Bool>> {
+        return []
+    }
+}
+
+class ExampleDelegate: ExampleDelegateProtocol {
+    func example(e: Example, didUpdateRows: UInt) {
+        print("x")
+    }
+}
+
+
+var ex = Example()
+var exd = ExampleDelegate()
+
+ex.delegate = exd
+ex.rows = 10
 
 
 
+// subscripts
+
+enum ExampleEnum{
+    case A
+    case B
+    case C
+    case D
+}
+
+protocol ExampleProtocal2 {
+    subscript(row: UInt, col: UInt) -> ExampleEnum? { get set }
+}
+
+class Example2: ExampleProtocal2{
+    var rows: UInt = 10
+    var cols: UInt = 10
+    private var cells: [ExampleEnum] = [ExampleEnum](count: 100, repeatedValue: .A)
+    subscript(row: UInt, col:UInt) -> ExampleEnum? {
+        get {
+            if row >= rows || col >= cols { return nil }
+            if cells.count < Int(row*col) { return nil }
+            return cells[Int(row * col + col)] // if 1-D array of cell states
+        }
+        set (newValue){
+            if newValue == nil { return }
+            if row < 0 || row >= rows || col < 0 || col >= cols { return }
+            let cellRow = row * cols + col
+            cells[Int(cellRow)] = newValue!
+        }
+    }
+}
 
 
 
+var e = Example2()
 
-
-
-
-
-
-
-
+e[7,2]
+e[3,3] = .B
 
 
 

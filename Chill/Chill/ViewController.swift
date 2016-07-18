@@ -1,33 +1,36 @@
 //
 //  ViewController.swift
-//  Assignment3
+//  Chill
 //
-//  Created by Ryan Kalla on 7/9/16.
+//  Created by Ryan Kalla on 7/14/16.
 //  Copyright © 2016 RyanKalla. All rights reserved.
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var grid: GridView!
     
-    @IBAction func buttonPressed(sender: AnyObject) {
-        grid.willSet(grid.grid, newGrid: grid.step2(grid.grid))
-        grid.grid = grid.step2(grid.grid)
-        //grid.setNeedsDisplay()
-        
+    @IBOutlet weak var nickname: UITextField!
+    
+    @IBAction func joinChat(sender: AnyObject) {
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        grid.setNeedsDisplay()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    var inputStream = NSInputStream()
+    var outputStream = NSOutputStream()
+    
+   
     
 
 
