@@ -14,7 +14,7 @@ class StandardEngine: EngineProtocol {
         didSet{
             if delegate != nil{
                 let center = NSNotificationCenter.defaultCenter()
-                let n = NSNotification(name: "EngineUpdate", object: nil, userInfo: nil)
+                let n = NSNotification(name: "EngineUpdate", object: nil, userInfo: ["url": "http//..."])
                 center.postNotification(n)
             }
         }

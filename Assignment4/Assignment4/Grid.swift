@@ -19,11 +19,12 @@ class Grid: GridProtocol{
             board = [[CellState]](count: rows, repeatedValue: [CellState](count: cols, repeatedValue: CellState.Empty))
         }
     }
-    var board: [[CellState]] = [[CellState]](count: 10, repeatedValue: [CellState](count: 10, repeatedValue: CellState.Empty))
+    var board: [[CellState]] = [[]]
     
     required init(rows: Int, cols: Int){
         self.rows = rows
         self.cols = cols
+        board = [[CellState]](count: rows, repeatedValue: [CellState](count: cols, repeatedValue: CellState.Empty))
     }
     
     func neighbors(posn: (x: Int, y: Int)) -> Array<(Int,Int)>{

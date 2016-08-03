@@ -16,11 +16,15 @@ import UIKit
     @IBInspectable var rows: Int = StandardEngine.sharedInstance.rows {
         didSet{
             grid = [[CellState]](count: rows, repeatedValue: [CellState](count: cols, repeatedValue: CellState.Empty))
+            StandardEngine.sharedInstance.grid = Grid(rows: rows, cols: cols)
+            StandardEngine.sharedInstance.rows = rows
         }
     }
     @IBInspectable var cols: Int = StandardEngine.sharedInstance.cols {
         didSet{
             grid = [[CellState]](count: rows, repeatedValue: [CellState](count: cols, repeatedValue: CellState.Empty))
+            StandardEngine.sharedInstance.grid = Grid(rows: rows, cols: cols)
+            StandardEngine.sharedInstance.cols = cols
         }
     }
     @IBInspectable var livingColor: UIColor = UIColor.cyanColor()

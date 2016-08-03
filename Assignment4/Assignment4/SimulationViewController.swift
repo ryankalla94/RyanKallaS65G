@@ -42,6 +42,9 @@ class SimulationViewController: UIViewController, EngineDelegateProtocol {
     }
     
     func engineDidUpdate(withGrid: GridProtocol) {
+        
+        // publish notofication (put grid in userInfo dictionary)
+        
         print("update")
     }
 

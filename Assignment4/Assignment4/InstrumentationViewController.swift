@@ -19,10 +19,12 @@ class InstrumentationViewController: UIViewController {
     @IBOutlet weak var rowsChanged: UIStepper!
 
     @IBAction func rowsChanged(sender: UIStepper) {
+        StandardEngine.sharedInstance.rows = Int(sender.value)
         rows.text = Int(sender.value).description
     }
     
     @IBAction func colsChanged(sender: UIStepper) {
+        StandardEngine.sharedInstance.cols = Int(sender.value)
         cols.text = Int(sender.value).description
     }
     
